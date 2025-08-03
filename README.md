@@ -38,27 +38,27 @@ characters typed into the terminal are received by the FPGA, processed, and echo
 assign rec_data1 = rec_data;
 
 ## 🛠️ Implementation on Basys 3
-- ✅ Requirements
+- ✅ Requirements:
 Vivado (tested with Vivado 2020.2+), Digilent Basys 3 board, USB cable, Serial terminal software (e.g., PuTTY)
 
-🔧 Steps
-Open Vivado and create a new project.
+## 🔧 Steps
+- Open Vivado and create a new project.
 
-Add Source Files:
+- Add Source Files:
 
-All .v files from src/
+- All .v files from src/
 
-Add Constraints:
+- Add Constraints:
 
-Use the .xdc file from constraints/basys3_uart.xdc
+- Use the .xdc file from constraints/basys3_uart.xdc
 
-Set Top Module:
+- Set Top Module:
 
 uart_test.v
 
-Synthesize → Implement → Generate Bitstream
+- Synthesize → Implement → Generate Bitstream
 
-Program Device with the .bit file.
+- Program Device with the .bit file.
 
 ##🧪 Testing Instructions
 Connect Basys 3 via USB.
