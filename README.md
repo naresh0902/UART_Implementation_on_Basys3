@@ -34,7 +34,7 @@ characters typed into the terminal are received by the FPGA, processed, and echo
 - The top-level module includes the line:  assign rec_data1 = rec_data + 1.
 - This increments the received ASCII code by 1 before sending it back. 
 - Input: a (ASCII 97) → FPGA sends back: b (ASCII 98)
--To echo exact characters, replace with:
+- To echo exact characters, replace with:
 assign rec_data1 = rec_data;
 
 ##🛠️ Implementation on Basys 3
