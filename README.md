@@ -3,7 +3,7 @@ This project implements a UART-based communication system on the **Basys 3 Artix
 characters typed into the terminal are received by the FPGA, processed, and echoed back. LEDs and the 7-segment display give real-time feedback.
 
 ## 📦 Repository Contents
-├── src/
+├── src/ <br>
 │ ├── uart_test.v # Top module connecting UART to LEDs & display
 │ ├── uart_top.v # Complete UART controller with TX & RX
 │ ├── baud_rate_generator.v # Generates ticks for 9600 baud
