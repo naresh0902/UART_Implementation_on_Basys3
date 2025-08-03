@@ -83,6 +83,6 @@ Vivado (tested with Vivado 2020.2+), Digilent Basys 3 board, USB cable, Serial t
 
 - Observe:LED pattern matches received ASCII code.
 
-7-segment display lights based on FIFO status.
+- 7-segment display lights based on FIFO status.
 
-Received characters are echoed back with incremented ASCII.
+- Received characters are echoed back with incremented ASCII.
