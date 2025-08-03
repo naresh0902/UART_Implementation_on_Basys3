@@ -52,42 +52,36 @@ Vivado (tested with Vivado 2020.2+), Digilent Basys 3 board, USB cable, Serial t
 
 - Use the .xdc file from constraints/basys3_uart.xdc
 
-- Set Top Module:
-
-uart_test.v
+- Set Top Module:uart_test.v
 
 - Synthesize → Implement → Generate Bitstream
 
 - Program Device with the .bit file.
 
-##🧪 Testing Instructions
-Connect Basys 3 via USB.
+## 🧪 Testing Instructions
+- Connect Basys 3 via USB.
 
-Open Device Manager → Ports (COM & LPT):
+- Open Device Manager → Ports (COM & LPT):
 
-Note which COM port Basys 3 is using.
+- Note which COM port Basys 3 is using.
 
-Open PuTTY:
+- Open PuTTY:Select "Serial"
 
-Select "Serial"
+- Baud rate: 9600
 
-Baud rate: 9600
+- Data bits: 8
 
-Data bits: 8
+- Stop bits: 1
 
-Stop bits: 1
+- Parity: None
 
-Parity: None
+- Flow Control: None
 
-Flow Control: None
+- Start Session and type characters.
 
-Start Session and type characters.
+- Press btnL (left button on Basys 3) to trigger UART read/write.
 
-Press btnL (left button on Basys 3) to trigger UART read/write.
-
-Observe:
-
-LED pattern matches received ASCII code.
+- Observe:LED pattern matches received ASCII code.
 
 7-segment display lights based on FIFO status.
 
