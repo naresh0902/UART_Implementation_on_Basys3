@@ -4,15 +4,15 @@ characters typed into the terminal are received by the FPGA, processed, and echo
 
 ## 📦 Repository Contents
 ├── src/ <br>
-│ ├── uart_test.v # Top module connecting UART to LEDs & display
-│ ├── uart_top.v # Complete UART controller with TX & RX
-│ ├── baud_rate_generator.v # Generates ticks for 9600 baud
-│ ├── debounce_explicit.v # Debouncer for push button
-│ ├── uart_rx.v # UART receiver
-│ ├── uart_tx.v # UART transmitter
-├── constraints/
-│ └── basys3_uart.xdc # Pin mapping for Basys 3
-├── README.md
+│ ├── uart_test.v # Top module connecting UART to LEDs & display  <br>
+│ ├── uart_top.v # Complete UART controller with TX & RX <br>
+│ ├── baud_rate_generator.v # Generates ticks for 9600 baud <br>
+│ ├── debounce_explicit.v # Debouncer for push button <br>
+│ ├── uart_rx.v # UART receiver <br>
+│ ├── uart_tx.v # UART transmitter <br>
+├── constraints/ <br>
+│ └── basys3_uart.xdc # Pin mapping for Basys 3 <br>
+├── README.md <br>
 
 
 ---
@@ -31,15 +31,14 @@ characters typed into the terminal are received by the FPGA, processed, and echo
 
 ### 2. Data Processing
 
-- The top-level module includes the line:  
+- The top-level module includes the line:  assign rec_data1 = rec_data + 1;
 
-assign rec_data1 = rec_data + 1;
 
-This increments the received ASCII code by 1 before sending it back.
+-This increments the received ASCII code by 1 before sending it back.
 
-Input: a (ASCII 97) → FPGA sends back: b (ASCII 98)
+-Input: a (ASCII 97) → FPGA sends back: b (ASCII 98)
 
-To echo exact characters, replace with:
+-To echo exact characters, replace with:
 assign rec_data1 = rec_data;
 
 ##🛠️ Implementation on Basys 3
