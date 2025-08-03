@@ -31,7 +31,7 @@ characters typed into the terminal are received by the FPGA, processed, and echo
 
 ### 2. Data Processing
 
-- The top-level module includes the line:  assign rec_data1 = rec_data + 1;
+- The top-level module includes the line:  assign rec_data1 = rec_data + 1.
 
 
 -This increments the received ASCII code by 1 before sending it back.
