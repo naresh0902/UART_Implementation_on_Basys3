@@ -37,15 +37,9 @@ characters typed into the terminal are received by the FPGA, processed, and echo
 - To echo exact characters, replace with:
 assign rec_data1 = rec_data;
 
-##🛠️ Implementation on Basys 3
-✅ Requirements
-Vivado (tested with Vivado 2020.2+)
-
-Digilent Basys 3 board
-
-USB cable
-
-Serial terminal software (e.g., PuTTY)
+## 🛠️ Implementation on Basys 3
+- ✅ Requirements
+Vivado (tested with Vivado 2020.2+), Digilent Basys 3 board, USB cable, Serial terminal software (e.g., PuTTY)
 
 🔧 Steps
 Open Vivado and create a new project.
